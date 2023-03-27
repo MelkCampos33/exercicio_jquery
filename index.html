@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="art.css">
+    <title>jquery gallery</title>
+</head>
+<body>
+
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <button type="button">nova imagem</button>
+    </header>
+
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input  id="address-new-image" type="url" required placeholder="URL da imagem">
+        <button type="submit">adicionar</button>
+        <button id="cancelButton" type="reset">cancelar</button>
+    </form>
+
+    <ul>
+        <li>
+            <img src="./images/foto1.jpg" alt="">
+
+            <div class="overlay-imagem-link">
+                <a href="./images/foto1.jpg" title="ver imagem no tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <img src="./images/foto2.jpg" alt="">
+
+            <div class="overlay-imagem-link">
+                <a href="./images/foto2.jpg" title="ver imagem no tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+
+
+        <li>
+            <img src="./images/foto3.jpg" alt="">
+
+            <div class="overlay-imagem-link">
+                <a href="./images/foto3.jpg" title="ver imagem no tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+    </ul>
+
+    
+    <!-- jquery sempre vem antes do nosso arquivo de javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
